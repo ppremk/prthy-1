@@ -1,15 +1,22 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import { getImagePath } from "@/utils/basePath";
 
 const Beliefs = () => {
+  const swirlsImagePath = getImagePath('/images/beliefs/swirls.svg');
+  const bgImagePath = getImagePath('/images/beliefs/bg.svg');
+  
   return (
     <section className="bg-cover bg-center dark:bg-darkmode overflow-hidden">
       <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md)">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
           {/* COLUMN-1 */}
 
-          <div className="bg-purple  pt-12 px-10 sm:px-24 pb-52 md:pb-70 rounded-3xl bg-[url('/images/beliefs/swirls.svg')] bg-no-repeat bg-right-bottom">
+          <div 
+            className="bg-purple pt-12 px-10 sm:px-24 pb-52 md:pb-70 rounded-3xl bg-no-repeat bg-right-bottom"
+            style={{ backgroundImage: `url('${swirlsImagePath}')` }}
+          >
             <h2 className="text-lg font-normal text-white tracking-widest mb-5 text-center sm:text-start uppercase">
               beliefs
             </h2>
@@ -35,7 +42,10 @@ const Beliefs = () => {
 
           {/* COLUMN-2 */}
           <div className="">
-            <div className="pt-12 px-10 sm:px-24 pb-52 md:pb-70 rounded-3xl bg-[#D6FFEB] bg-[url('/images/beliefs/bg.svg')] bg-no-repeat bg-bottom">
+            <div 
+              className="pt-12 px-10 sm:px-24 pb-52 md:pb-70 rounded-3xl bg-[#D6FFEB] bg-no-repeat bg-bottom"
+              style={{ backgroundImage: `url('${bgImagePath}')` }}
+            >
               <h2 className="text-lg font-normal text-primary tracking-widest mb-5 text-center sm:text-start uppercase">
                 BUILD
               </h2>

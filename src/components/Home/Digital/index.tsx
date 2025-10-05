@@ -2,11 +2,17 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { getImagePath } from "@/utils/basePath";
 
 const Digital = () => {
+  const bgImagePath = getImagePath('/images/digital/bg.svg');
+  
   return (
     <section className="relative bg-cover bg-center dark:bg-darkmode overflow-hidden">
-      <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) rounded-3xl bg-primary bg-[url('/images/digital/bg.svg')] bg-no-repeat bg-right-top pb-60 relative">
+      <div 
+        className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) rounded-3xl bg-primary bg-no-repeat bg-right-top pb-60 relative"
+        style={{ backgroundImage: `url('${bgImagePath}')` }}
+      >
         <div className="grid grid-cols-1 lg:grid-cols-2">
           {/* COLUMN-1 */}
           <div className="pt-24 lg:pl-24">
