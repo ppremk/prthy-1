@@ -88,7 +88,7 @@ const Work = () => {
             <div className="bg-white dark:bg-darkHeroBg m-3 py-14 my-10 text-center shadow-xl rounded-3xl">
               <div className="relative">
                 <Image
-                  src={items.imgSrc}
+                  src={getImagePath(items.imgSrc)}
                   alt="gaby"
                   width={182}
                   height={182}
@@ -96,7 +96,7 @@ const Work = () => {
                 />
                 <div className="absolute right-16 bottom-0 bg-white shadow-linckedin p-5 rounded-full">
                   <Image
-                    src={"/images/wework/linkedin.svg"}
+                    src={getImagePath("/images/wework/linkedin.svg")}
                     alt="greenbg"
                     width={30}
                     height={30}

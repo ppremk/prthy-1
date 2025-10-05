@@ -33,7 +33,7 @@ const Aboutus = () => {
                   {item.heading}
                 </h4>
                 <Image
-                  src={item.imgSrc}
+                  src={getImagePath(item.imgSrc)}
                   alt={item.imgSrc}
                   width={100}
                   height={100}

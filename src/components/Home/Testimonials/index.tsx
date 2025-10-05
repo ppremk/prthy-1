@@ -66,7 +66,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ items }) => {
     <div className="relative py-10">
       <div className="bg-white dark:bg-darkHeroBg shadow-testimonial m-3 p-10 rounded-3xl">
         <Image
-          src={items.imgSrc}
+          src={getImagePath(items.imgSrc)}
           alt={`${items.name} - ${items.profession} testimonial image`}
           width={71}
           height={71}
