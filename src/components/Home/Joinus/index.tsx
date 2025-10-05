@@ -9,7 +9,7 @@ const Join = () => {
 
   return (
     <section 
-      className="overflow-hidden dark:bg-darkmode"
+      className="overflow-hidden"
       style={{
         backgroundImage: `url('${hornImagePath}'), url('${paintImagePath}')`,
         backgroundRepeat: 'no-repeat, no-repeat',

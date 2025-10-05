@@ -8,7 +8,7 @@ const Digital = () => {
   const bgImagePath = getImagePath('/images/digital/bg.svg');
   
   return (
-    <section className="relative bg-cover bg-center dark:bg-darkmode overflow-hidden">
+    <section className="relative bg-cover bg-center overflow-hidden">
       <div 
         className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) rounded-3xl bg-primary bg-no-repeat bg-right-top pb-60 relative"
         style={{ backgroundImage: `url('${bgImagePath}')` }}

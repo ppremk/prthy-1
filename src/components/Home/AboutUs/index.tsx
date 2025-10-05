@@ -7,9 +7,9 @@ import { getImagePath } from "@/utils/basePath";
 
 const Aboutus = () => {
   return (
-    <section className=" bg-cover bg-center dark:bg-darkmode overflow-hidden">
+    <section className=" bg-cover bg-center overflow-hidden">
       <div className="container mx-auto lg:max-w-(--breakpoint-xl) relative z-1 md:max-w-(--breakpoint-md)">
-        <div className="lg:p-12 px-2 bg-grey dark:bg-darkmode rounded-3xl">
+        <div className="lg:p-12 px-2 bg-gray-50 rounded-3xl">
           <Image
             src={getImagePath('/images/aboutus/dots.svg')}
             width={100}

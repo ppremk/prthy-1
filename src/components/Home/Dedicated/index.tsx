@@ -5,7 +5,7 @@ import { getImagePath } from "@/utils/basePath";
 
 const Dedicated = () => {
   return (
-    <section className="relative bg-cover bg-center dark:bg-darkmode overflow-hidden">
+    <section className="relative bg-cover bg-center overflow-hidden">
       <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md)">
         <div className="grid grid-cols-1 lg:grid-cols-12">
           <Image

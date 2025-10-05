@@ -30,10 +30,10 @@ const Hero = () => {
         <div className="grid grid-cols-12 justify-center items-center">
           <div className="col-span-5">
             <div className="py-2 px-5 bg-primary/15 rounded-full w-fit">
-              <p className="text-primary text-lg font-bold">DESIGN AGENCY</p>
+              <p className="text-primary text-lg font-bold">Fractional HR</p>
             </div>
             <h1 className="text-80 font-bold">
-              Dedicated to bring your ideas to life.
+              Dedicated to bring your HR needs to life.
             </h1>
             <button className="bg-primary text-white text-xl font-semibold py-5 px-12 rounded-full hover:bg-darkmode">
               Get started

@@ -72,16 +72,16 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ items }) => {
           height={71}
           className="inline-block m-auto absolute top-3"
         />
-        <h4 className="text-16 font-medium text-testColor my-4 text-black dark:text-white">
+        <h4 className="text-16 font-medium text-testColor my-4 text-black ">
           {items.comment}
         </h4>
         <hr style={{ color: "border" }} />
         <div className="flex justify-between">
           <div>
-            <h3 className="text-16 font-medium pt-4 pb-2 text-black dark:text-white">
+            <h3 className="text-16 font-medium pt-4 pb-2 text-black ">
               {items.name}
             </h3>
-            <h3 className="text-xs font-medium pb-2 text-black/50 dark:text-white/50">
+            <h3 className="text-xs font-medium pb-2 text-black/50 ">
               {items.profession}
             </h3>
           </div>
@@ -106,7 +106,7 @@ const Testimonial: React.FC = () => {
   
   return (
     <section 
-      className="bg-testimonial dark:bg-darkmode bg-cover bg-center overflow-hidden before:absolute before:w-full before:h-full before:bg-no-repeat before:bg-center" 
+      className="bg-testimonial bg-cover bg-center overflow-hidden before:absolute before:w-full before:h-full before:bg-no-repeat before:bg-center" 
       id="testimonial-section"
       style={{
         '--before-bg-image': `url('${elipseImagePath}')`,
@@ -120,13 +120,13 @@ const Testimonial: React.FC = () => {
       <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md)">
         <div className="">
           <div className="text-center">
-            <h3 className="text-4xl sm:text-6xl font-bold text-black dark:text-white my-3">
+            <h3 className="text-4xl sm:text-6xl font-bold text-black  my-3">
               See what others are saying.
             </h3>
-            <h3 className="text-4xl sm:text-6xl font-bold text-black/50 dark:text-white/50 lg:mr-48 my-4">
+            <h3 className="text-4xl sm:text-6xl font-bold text-black/50 lg:mr-48 my-4">
               See what others are saying.
             </h3>
-            <h3 className="text-4xl sm:text-6xl font-bold text-black/25 dark:text-white/25 lg:-mr-32 my-4">
+            <h3 className="text-4xl sm:text-6xl font-bold text-black/25 lg:-mr-32 my-4">
               See what others are saying.
             </h3>
           </div>

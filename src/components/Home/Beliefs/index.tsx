@@ -8,7 +8,7 @@ const Beliefs = () => {
   const bgImagePath = getImagePath('/images/beliefs/bg.svg');
   
   return (
-    <section className="bg-cover bg-center dark:bg-darkmode overflow-hidden">
+    <section className="bg-cover bg-center overflow-hidden">
       <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md)">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
           {/* COLUMN-1 */}
