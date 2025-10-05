@@ -34,7 +34,7 @@ const Digital = () => {
         </div>
         <div className="absolute -bottom-16 -right-20">
           <Image
-            src="/images/digital/girldoodle.svg"
+            src={getImagePath('/images/digital/girldoodle.svg')}
             alt="doodle"
             width={815}
             height={691}

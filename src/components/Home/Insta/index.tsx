@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { getImagePath } from "@/utils/basePath";
 
 const Insta = () => {
   return (
@@ -8,7 +9,7 @@ const Insta = () => {
         {/* Image Container 1 */}
         <div className="relative group mx-auto">
           <Image
-            src="/images/insta/insta1.png"
+            src={getImagePath('/images/insta/insta1.png')}
             width={306}
             height={306}
             alt="instaOne"
@@ -20,7 +21,7 @@ const Insta = () => {
               className="hidden absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-semibold group-hover:block"
             >
               <Image
-                src="/images/insta/instagram.svg"
+                src={getImagePath('/images/insta/instagram.svg')}
                 alt="instagram"
                 width={36}
                 height={36}
@@ -32,7 +33,7 @@ const Insta = () => {
         {/* Image Container 2 */}
         <div className="relative group mx-auto">
           <Image
-            src="/images/insta/insta2.png"
+            src={getImagePath('/images/insta/insta2.png')}
             width={306}
             height={306}
             alt="instaTwo"
@@ -44,7 +45,7 @@ const Insta = () => {
               className="hidden absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-semibold group-hover:block"
             >
               <Image
-                src="/images/insta/instagram.svg"
+                src={getImagePath('/images/insta/instagram.svg')}
                 alt="instagram"
                 width={36}
                 height={36}
@@ -56,7 +57,7 @@ const Insta = () => {
         {/* Image Container 3 */}
         <div className="relative group mx-auto">
           <Image
-            src="/images/insta/insta3.png"
+            src={getImagePath('/images/insta/insta3.png')}
             width={306}
             height={306}
             alt="instaThree"
@@ -68,7 +69,7 @@ const Insta = () => {
               className="hidden absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-semibold group-hover:block"
             >
               <Image
-                src="/images/insta/instagram.svg"
+                src={getImagePath('/images/insta/instagram.svg')}
                 alt="instagram"
                 width={36}
                 height={36}
@@ -80,7 +81,7 @@ const Insta = () => {
         {/* Image Container 4 */}
         <div className="relative group mx-auto">
           <Image
-            src="/images/insta/insta4.png"
+            src={getImagePath('/images/insta/insta4.png')}
             width={306}
             height={306}
             alt="instaFour"
@@ -92,7 +93,7 @@ const Insta = () => {
               className="hidden absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-semibold group-hover:block"
             >
               <Image
-                src="/images/insta/instagram.svg"
+                src={getImagePath('/images/insta/instagram.svg')}
                 alt="instagram"
                 width={36}
                 height={36}

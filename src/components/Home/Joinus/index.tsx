@@ -1,10 +1,21 @@
 "use client"
 import React from "react";
 import Link from "next/link";
+import { getImagePath } from "@/utils/basePath";
 
 const Join = () => {
+  const hornImagePath = getImagePath('/images/joinus/horn.svg');
+  const paintImagePath = getImagePath('/images/joinus/paint.svg');
+
   return (
-    <section className="overflow-hidden dark:bg-darkmode bg-joinus">
+    <section 
+      className="overflow-hidden dark:bg-darkmode"
+      style={{
+        backgroundImage: `url('${hornImagePath}'), url('${paintImagePath}')`,
+        backgroundRepeat: 'no-repeat, no-repeat',
+        backgroundPosition: '84% 100%, 12% 18%'
+      }}
+    >
       <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md)">
         <div className="text-center">
           <h3 className="text-blue text-lg font-normal tracking-widest uppercase">

@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link";
+import React from "react";
 import Image from "next/image";
+import { getImagePath } from "@/utils/basePath";
 import { motion } from "framer-motion";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
@@ -39,7 +41,7 @@ const Hero = () => {
           </div>
           <div className="col-span-7">
             <Image
-              src="/images/hero/banner-image.png"
+              src={getImagePath('/images/hero/banner-image.png')}
               alt="banner image"
               width={600}
               height={600}

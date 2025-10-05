@@ -86,13 +86,6 @@ section {
   left: -70px !important;
 }
 
-.bg-joinus {
-  background-image: url('/images/joinus/horn.svg'),
-    url('/images/joinus/paint.svg');
-  background-repeat: no-repeat, no-repeat;
-  background-position: 84% 100%, 12% 18%;
-}
-
 /* Header border override - force light grey borders */
 .container .border-black\/60,
 .container [class*="border-black/60"] {

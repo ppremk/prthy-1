@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Switch } from "@headlessui/react";
 import Image from "next/image";
+import { getImagePath } from "@/utils/basePath";
 
 // Define the plan structure and its types
 const plans = [
@@ -78,11 +79,11 @@ const Manage = () => {
 
         <div className="md:flex md:justify-around mt-20">
           <div className="flex gap-5 justify-center md:justify-start">
-            <Image src="/images/manage/right.svg" alt="right-icon" width={21} height={14} />
+            <Image src={getImagePath('/images/manage/right.svg')} alt="right-icon" width={21} height={14} />
             <h4 className="text-18 font-semibold">Free 15-day trial</h4>
           </div>
           <div className="flex gap-5 justify-center md:justify-start">
-            <Image src="/images/manage/right.svg" alt="right-icon" width={21} height={14} />
+            <Image src={getImagePath('/images/manage/right.svg')} alt="right-icon" width={21} height={14} />
             <h4 className="text-18 font-semibold">Unlimited Team Members</h4>
           </div>
           <div className="flex gap-5 justify-center md:justify-start">
@@ -93,7 +94,7 @@ const Manage = () => {
 
         <div className="mt-6 relative">
           <div className="dance-text -ml-80 text-center -rotate-[10deg] mb-5">get 3 months free</div>
-          <Image src="/images/manage/toggle.svg" alt="toggle-image" width={24} height={24} className="absolute left-[37%] top-8" />
+          <Image src={getImagePath('/images/manage/toggle.svg')} alt="toggle-image" width={24} height={24} className="absolute left-[37%] top-8" />
           <div className="flex justify-center">
             <h3 className="text-14 font-medium mr-5">Billed Yearly</h3>
             <Switch

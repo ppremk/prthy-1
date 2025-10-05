@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { getImagePath } from "@/utils/basePath";
 
 const Dedicated = () => {
   return (
@@ -8,7 +9,7 @@ const Dedicated = () => {
       <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md)">
         <div className="grid grid-cols-1 lg:grid-cols-12">
           <Image
-            src="/images/dedicated/spiral.svg"
+            src={getImagePath('/images/dedicated/spiral.svg')}
             height={272}
             width={686}
             alt="spiral-design"
@@ -17,7 +18,7 @@ const Dedicated = () => {
           {/* Left Column */}
           <div className="col-span-12 lg:col-span-6">
             <Image
-              src="/images/dedicated/man.svg"
+              src={getImagePath('/images/dedicated/man.svg')}
               alt="man-icon"
               width={416}
               height={530}
@@ -29,7 +30,7 @@ const Dedicated = () => {
           <div className="col-span-12 lg:col-span-6">
             <div className="relative">
               <Image
-                src="/images/dedicated/comma.svg"
+                src={getImagePath('/images/dedicated/comma.svg')}
                 alt="comma-image"
                 width={200}
                 height={106}

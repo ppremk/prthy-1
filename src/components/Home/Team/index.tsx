@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { getImagePath } from "@/utils/basePath";
 
 const Team = () => {
   return (
@@ -14,7 +15,7 @@ const Team = () => {
         </h3>
         <div className="grid grid-cols-1 mt-16">
           <Image
-            src="/images/team/teamimg.png"
+            src={getImagePath('/images/team/teamimg.png')}
             alt="office-image"
             height={684}
             width={1296}
