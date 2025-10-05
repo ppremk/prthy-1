@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 import { Testimonials } from "@/app/api/data";
+import { getImagePath } from "@/utils/basePath";
 
 interface TestimonialType {
   name: string;
@@ -101,8 +102,21 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ items }) => {
 };
 
 const Testimonial: React.FC = () => {
+  const elipseImagePath = getImagePath('/images/wework/elipse.svg');
+  
   return (
-    <section className="bg-testimonial dark:bg-darkmode bg-cover bg-center overflow-hidden before:absolute before:w-full before:h-full before:bg-[url('/images/wework/elipse.svg')] before:bg-no-repeat before:bg-center" id="testimonial-section">
+    <section 
+      className="bg-testimonial dark:bg-darkmode bg-cover bg-center overflow-hidden before:absolute before:w-full before:h-full before:bg-no-repeat before:bg-center" 
+      id="testimonial-section"
+      style={{
+        '--before-bg-image': `url('${elipseImagePath}')`,
+      } as React.CSSProperties}
+    >
+      <style jsx>{`
+        section::before {
+          background-image: var(--before-bg-image);
+        }
+      `}</style>
       <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md)">
         <div className="">
           <div className="text-center">

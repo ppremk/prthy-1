@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import { postData } from "@/app/api/data";
+import { getImagePath } from "@/utils/basePath";
 
 function SampleNextArrow(props: { className: any; style: any; onClick: any }) {
   const { className, style, onClick } = props;
@@ -80,8 +81,20 @@ const settings = {
 };
 
 const Featured = () => {
+  const vectorImagePath = getImagePath('/images/wework/vector.svg');
+  
   return (
-    <section className="relative bg-deepSlate dark:bg-darkmode -mt-80 pt-80 after:absolute after:w-1/4 after:h-1/4 after:bg-[url('/images/wework/vector.svg')]  after:top-72 after:right-0 after:bg-no-repeat">
+    <section 
+      className="relative bg-deepSlate dark:bg-darkmode -mt-80 pt-80 after:absolute after:w-1/4 after:h-1/4 after:top-72 after:right-0 after:bg-no-repeat"
+      style={{
+        '--after-bg-image': `url('${vectorImagePath}')`,
+      } as React.CSSProperties}
+    >
+      <style jsx>{`
+        section::after {
+          background-image: var(--after-bg-image);
+        }
+      `}</style>
       <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) relative">
         <div className="text-center mt-24">
           <h3 className="text-65 sm:text-6xl font-bold text-white my-2">
